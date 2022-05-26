@@ -11,6 +11,13 @@ h3{
 p{
     margin: 0 1rem;
 }
+.card-link{
+    display: box;
+    width: 20%;
+    border-radius: 10px ;
+    overflow: hidden;
+    margin-top: 1rem;
+}
 .card-container{
     display: flex;
     margin-top: 2rem;
@@ -20,10 +27,7 @@ p{
 }
 .card{
     background-color: white;
-    width: 20%;
-    border-radius: 10px ;
-    overflow: hidden;
-    margin-top: 1rem;
+    
     transition: all ease-in-out 0.3s;
 }
 .card:hover{

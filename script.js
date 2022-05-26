@@ -1,19 +1,25 @@
 const data = [
     {
         cardImage : "./stopwatch.png",
-        cardheading: "JavaScript StopWatch"
+        cardheading: "JavaScript StopWatch",
+        link : './Stopwatch/stopwatch.html'
     },
     {
         cardImage : "./stopwatch.png",
-        cardheading: "JavaScript StopWatch"
+        cardheading: "JavaScript StopWatch",
+        link : "./Stopwatch/stopwatch.html"
     },
     {
         cardImage : "./stopwatch.png",
-        cardheading: "JavaScript StopWatch"
+        cardheading: "JavaScript StopWatch",
+        link : "./Stopwatch/stopwatch.html"
+
     },
     {
         cardImage : "./stopwatch.png",
-        cardheading: "JavaScript StopWatch"
+        cardheading: "JavaScript StopWatch",
+        link : "./Stopwatch/stopwatch.html"
+
     }
 ]
 
@@ -25,7 +31,7 @@ for(i =0; i<data.length; i++){
 
     const card = document.createElement("div");
     card.classList.add("card");
-    cardConatiner.appendChild(card);
+    
     const cardImg = document.createElement("div");
     cardImg.classList.add("card-img");
     const cardTitle = document.createElement("div");
@@ -40,4 +46,11 @@ for(i =0; i<data.length; i++){
 
     img.setAttribute("src", data[i].cardImage);
     h3.innerHTML = data[i].cardheading;
+    const a = document.createElement("a");
+    a. classList.add("card-link");
+    
+    a.setAttribute("href", data[i].link);
+    a.appendChild(card);
+    cardConatiner.appendChild(a);
+
 }
